@@ -81,7 +81,7 @@ Updated 2026-10-27. Status changes to DONE only after implementation, playable e
 
 ## 100-game couch multiplayer suite
 
-Separate Godot 4 target, preserving the current GitHub Pages hub. Seven suite games are implemented and pass their headless playable checks. Godot 4.7.2 stable is downloaded to an ignored local tools folder; physical-controller hardware validation remains outstanding.
+Separate Godot 4 target, preserving the current GitHub Pages hub. Eight suite games are implemented and pass their headless playable checks. Godot 4.7.2 stable is downloaded to an ignored local tools folder; physical-controller hardware validation remains outstanding.
 
 | Suite order | Game | Status |
 |---:|---|---|
@@ -92,7 +92,7 @@ Separate Godot 4 target, preserving the current GitHub Pages hub. Seven suite ga
 | 5 | Motorcycle Hill Climb | DONE — local commit 7ae0a8d; eight authored mountain profiles, traction/slope/pitch physics, jumps and crash checks, stage unlocks, gamepad flow, and local career save pass Godot checks; physical controller not available for hardware validation |
 | 6 | Soapbox Derby | DONE — eight complete routes, all gates/hazards, gamepad pause/start, finish scoring, hub launch, and save reload pass Godot 4.7 checks |
 | 7 | Hovercraft Time Attack | DONE — eight complete water courses, gate and buoy physics, boost, gamepad flow, hub launch, and career save pass Godot 4.7.2 headless checks; physical controller not available for hardware validation |
-| 8 | Stock Car Oval | PENDING |
+| 8 | Stock Car Oval | DONE — five authored ovals, six-car field, local two-player controls, drafting, tire temperature, contact damage, six-lap finishes, progression and hub launch pass Godot 4.7.2 headless checks; physical controller not available for hardware validation |
 | 9 | Monster Truck Arena | PENDING |
 | 10 | Drone Racing | PENDING |
 | 11 | Boat Racing | PENDING |
