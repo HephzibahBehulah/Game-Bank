@@ -194,7 +194,7 @@ Separate Godot 4 target, preserving the current GitHub Pages hub. No suite game 
 | 100,000–1,000,000 individual games and 10,000–100,000 authored levels each | PENDING — long-term target; current catalog has 20 games |
 | PS5/PS6, Apple, Android and Windows store releases | PENDING — no platform certification or store releases |
 | Desktop launchers | PARTIAL — generator covers current catalog; not refreshed for the in-progress web draft |
-| GitHub push/deploy | BLOCKED — commits remain local on codex/triple-game-platform; Git credentials previously failed |
+| GitHub push/deploy | DONE — main commit 2cdaa87 publishes 20 browser games; GitHub Pages run 40560350861 succeeded. Godot couch-suite source for games 1–5 is in main but is not exported for web. Direct local Git push still fails because the Windows credential helper cannot start. |
 
 ## Recent local commits
 
@@ -213,7 +213,7 @@ Separate Godot 4 target, preserving the current GitHub Pages hub. No suite game 
 - c120bc8 — racing manager (catalog 16)
 - bdafb9c — tactics (catalog 15)
 
-All above commits are local; none are pushed or deployed.
+The changes listed above are included in main commit 2cdaa87. GitHub received them as one API-created snapshot commit after the local Windows Git credential helper failed; the original local commit hashes are not individually preserved in GitHub history.
 
 ## Update rule
 
