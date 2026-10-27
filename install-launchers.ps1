@@ -34,4 +34,28 @@ foreach ($game in $games) {
   $content = "[InternetShortcut]" + $crlf + "URL=" + $url + $crlf
   [System.IO.File]::WriteAllText((Join-Path $folder ($game.Name + ".url")), $content, $utf8)
 }
-Write-Host "Created $($games.Count) Game Bank launchers in $folder"
+Write-Host "Created $($games.Count) Game Bank web launchers in $folder"
+$godot = Join-Path $PSScriptRoot ".local-tools\godot-4.7.2\Godot_v4.7.2-stable_win64.exe"
+if (Test-Path -LiteralPath $godot) {
+  $suite = Join-Path $PSScriptRoot "couch-suite"
+  $suiteGames = @(
+    @{ Name = "S01 KART GRAND PRIX"; Scene = "res://games/kart_grand_prix.tscn" },
+    @{ Name = "S02 RALLY STAGE TIME TRIAL"; Scene = "res://games/rally_stage_time_trial.tscn" },
+    @{ Name = "S03 FORMULA SPRINT"; Scene = "res://games/formula_sprint.tscn" },
+    @{ Name = "S04 TRUCK TRIAL"; Scene = "res://games/truck_trial.tscn" },
+    @{ Name = "S05 MOTORCYCLE HILL CLIMB"; Scene = "res://games/motorcycle_hill_climb.tscn" },
+    @{ Name = "S06 SOAPBOX DERBY"; Scene = "res://games/soapbox_derby.tscn" }
+  )
+  $shell = New-Object -ComObject WScript.Shell
+  foreach ($game in $suiteGames) {
+    $shortcut = $shell.CreateShortcut((Join-Path $folder ($game.Name + ".lnk")))
+    $shortcut.TargetPath = $godot
+    $shortcut.Arguments = "--path `"$suite`" --scene `"$($game.Scene)`""
+    $shortcut.WorkingDirectory = $PSScriptRoot
+    $shortcut.Description = "Hephzibah Behulah Game Bank — " + $game.Name
+    $shortcut.Save()
+  }
+  Write-Host "Created $($suiteGames.Count) Godot couch-game launchers in $folder"
+} else {
+  Write-Host "Godot is not installed in .local-tools; web launchers were created."
+}

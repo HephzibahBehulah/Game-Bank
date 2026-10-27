@@ -90,7 +90,7 @@ Separate Godot 4 target, preserving the current GitHub Pages hub. No suite game 
 | 3 | Formula Sprint | DONE — local commit d0b380b; five 10-lap circuits, 2-player/eight-car fields, fuel/tyre wear, AI pit strategy, four-lug timing stop, podium/results, and career-save checks pass; no physical controller available for analog hardware validation |
 | 4 | Truck Trial | DONE — local commit 40e616f; eight authored obstacle courses, safe-speed rollover physics, crane gates, gamepad/keyboard controls, finish ratings, stage unlocks, and saved best times pass Godot checks; physical controller not available for hardware validation |
 | 5 | Motorcycle Hill Climb | DONE — local commit 7ae0a8d; eight authored mountain profiles, traction/slope/pitch physics, jumps and crash checks, stage unlocks, gamepad flow, and local career save pass Godot checks; physical controller not available for hardware validation |
-| 6 | Soapbox Derby | PENDING |
+| 6 | Soapbox Derby | DONE — eight complete routes, all gates/hazards, gamepad pause/start, finish scoring, hub launch, and save reload pass Godot 4.7 checks |
 | 7 | Hovercraft Time Attack | PENDING |
 | 8 | Stock Car Oval | PENDING |
 | 9 | Monster Truck Arena | PENDING |
@@ -195,7 +195,7 @@ Separate Godot 4 target, preserving the current GitHub Pages hub. No suite game 
 | Real football rosters, named players, clubs and seasons | PARTIAL — existing competition selections; verified rosters and likeness rights are not included |
 | 100,000–1,000,000 individual games and 10,000–100,000 authored levels each | PENDING — long-term target; current catalog has 22 games |
 | PS5/PS6, Apple, Android and Windows store releases | PENDING — no platform certification or store releases |
-| Desktop launchers | PARTIAL — generator covers current catalog; not refreshed for the in-progress web draft |
+| Desktop launchers | DONE for released work — 22 browser shortcuts and 6 Godot suite shortcuts created by the installer |
 | GitHub push/deploy | DONE — main commit 2cdaa87 publishes 20 browser games; GitHub Pages run 40560350861 succeeded. Godot couch-suite source for games 1–5 is in main but is not exported for web. Direct local Git push still fails because the Windows credential helper cannot start. |
 
 ## Recent local commits

@@ -38,7 +38,8 @@
     "id": 6,
     "title": "Soapbox Derby",
     "category": "Racing",
-    "launchable": false
+    "launchable": true,
+    "scene": "res://games/soapbox_derby.tscn"
   },
   {
     "id": 7,
@@ -605,4 +606,3 @@
     "launchable": false
   }
 ]
-
