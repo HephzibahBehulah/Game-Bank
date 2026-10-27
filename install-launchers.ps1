@@ -44,7 +44,8 @@ if (Test-Path -LiteralPath $godot) {
     @{ Name = "S03 FORMULA SPRINT"; Scene = "res://games/formula_sprint.tscn" },
     @{ Name = "S04 TRUCK TRIAL"; Scene = "res://games/truck_trial.tscn" },
     @{ Name = "S05 MOTORCYCLE HILL CLIMB"; Scene = "res://games/motorcycle_hill_climb.tscn" },
-    @{ Name = "S06 SOAPBOX DERBY"; Scene = "res://games/soapbox_derby.tscn" }
+    @{ Name = "S06 SOAPBOX DERBY"; Scene = "res://games/soapbox_derby.tscn" },
+    @{ Name = "S07 HOVERCRAFT TIME ATTACK"; Scene = "res://games/hovercraft_time_attack.tscn" }
   )
   $shell = New-Object -ComObject WScript.Shell
   foreach ($game in $suiteGames) {
@@ -59,3 +60,4 @@ if (Test-Path -LiteralPath $godot) {
 } else {
   Write-Host "Godot is not installed in .local-tools; web launchers were created."
 }
+

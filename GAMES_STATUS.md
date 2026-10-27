@@ -81,7 +81,7 @@ Updated 2026-10-27. Status changes to DONE only after implementation, playable e
 
 ## 100-game couch multiplayer suite
 
-Separate Godot 4 target, preserving the current GitHub Pages hub. No suite game is complete yet. Godot 4.7.2 stable is downloaded to an ignored local tools folder and its headless version is verified; project setup and game 1 remain pending.
+Separate Godot 4 target, preserving the current GitHub Pages hub. Seven suite games are implemented and pass their headless playable checks. Godot 4.7.2 stable is downloaded to an ignored local tools folder; physical-controller hardware validation remains outstanding.
 
 | Suite order | Game | Status |
 |---:|---|---|
@@ -91,7 +91,7 @@ Separate Godot 4 target, preserving the current GitHub Pages hub. No suite game 
 | 4 | Truck Trial | DONE — local commit 40e616f; eight authored obstacle courses, safe-speed rollover physics, crane gates, gamepad/keyboard controls, finish ratings, stage unlocks, and saved best times pass Godot checks; physical controller not available for hardware validation |
 | 5 | Motorcycle Hill Climb | DONE — local commit 7ae0a8d; eight authored mountain profiles, traction/slope/pitch physics, jumps and crash checks, stage unlocks, gamepad flow, and local career save pass Godot checks; physical controller not available for hardware validation |
 | 6 | Soapbox Derby | DONE — eight complete routes, all gates/hazards, gamepad pause/start, finish scoring, hub launch, and save reload pass Godot 4.7 checks |
-| 7 | Hovercraft Time Attack | PENDING |
+| 7 | Hovercraft Time Attack | DONE — eight complete water courses, gate and buoy physics, boost, gamepad flow, hub launch, and career save pass Godot 4.7.2 headless checks; physical controller not available for hardware validation |
 | 8 | Stock Car Oval | PENDING |
 | 9 | Monster Truck Arena | PENDING |
 | 10 | Drone Racing | PENDING |
@@ -195,7 +195,7 @@ Separate Godot 4 target, preserving the current GitHub Pages hub. No suite game 
 | Real football rosters, named players, clubs and seasons | PARTIAL — existing competition selections; verified rosters and likeness rights are not included |
 | 100,000–1,000,000 individual games and 10,000–100,000 authored levels each | PENDING — long-term target; current catalog has 22 games |
 | PS5/PS6, Apple, Android and Windows store releases | PENDING — no platform certification or store releases |
-| Desktop launchers | DONE for released work — 22 browser shortcuts and 6 Godot suite shortcuts created by the installer |
+| Desktop launchers | DONE for released work — 22 browser shortcuts and 7 Godot suite shortcuts created by the installer |
 | GitHub push/deploy | DONE — main commit 2cdaa87 publishes 20 browser games; GitHub Pages run 40560350861 succeeded. Godot couch-suite source for games 1–5 is in main but is not exported for web. Direct local Git push still fails because the Windows credential helper cannot start. |
 
 ## Recent local commits
@@ -220,6 +220,7 @@ The changes listed above are included in main commit 2cdaa87. GitHub received th
 ## Update rule
 
 After each tested full playthrough, mark that single game DONE, record its commit and test evidence here, and continue to the next pending item. Keep web catalog numbering and couch-suite numbering separate.
+
 
 
 
