@@ -52,7 +52,8 @@
     "id": 8,
     "title": "Stock Car Oval",
     "category": "Racing",
-    "launchable": false
+    "launchable": true,
+    "scene": "res://games/stock_car_oval.tscn"
   },
   {
     "id": 9,
@@ -607,3 +608,4 @@
     "launchable": false
   }
 ]
+
