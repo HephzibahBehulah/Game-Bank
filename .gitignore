@@ -7,3 +7,4 @@ platform/**/*.db
 platform/**/__pycache__/
 platform/**/.pytest_cache/
 .godot-test-appdata/
+
