@@ -53,3 +53,4 @@ The project is plain HTML/CSS/JavaScript. Open `index.html` for the catalog. Git
 ## Console and account roadmap
 
 User accounts, cloud-synced progress, admin controls, multiplayer, secure AI provider deployment, native iOS/Android/Windows packages and PS5/PS6-native games have not been delivered. Native console releases require platform-holder developer access, approved tooling, licensing and certification; a browser game is not a native PlayStation title.
+
