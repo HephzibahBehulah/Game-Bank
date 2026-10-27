@@ -2,7 +2,7 @@
 
 A growing library of individual browser games. GitHub Pages publishes the catalog and every released game page.
 
-## Current playable titles
+## Current catalog titles
 
 1. NEON PULSE — RGB LED light design
 2. CIRCUIT RUSH — wire-path puzzle
@@ -24,6 +24,7 @@ A growing library of individual browser games. GitHub Pages publishes the catalo
 18. DEBATE ARENA — three-round debate with authored replay responses and a transparent scoring rubric
 19. CASEFILE — three deterministic mysteries with suspect interviews and a ten-question accusation limit
 20. MARKET DUEL — 30-day fictional stock-market game versus an observable moving-average AI
+21. AI ARENA — sends a prompt concurrently to ChatGPT, Gemini, DeepSeek, Claude, Grok and Ollama; authenticated players compare live answers and save ratings through a protected API
 
 ## Progression
 
@@ -37,10 +38,9 @@ WORLD FOOTBALL currently provides a 2D arcade match and official team-name selec
 
 CORTEX PRIME generates deterministic sequence, matrix and rule-decoding challenges. SYNAPSE SPRINT tests digit recall with growing length and shorter display intervals. BILLIONAIRE CHALLENGE provides original calculations, logic and curated fact questions, three per-run lifelines, safety-net prize tiers and local best-score storage. It is an independent quiz game and is not affiliated with a television quiz brand.
 
-## AI competition — active requirement, not released yet
+## AI competition
 
-The planned AI arena must send one text or speech-transcribed prompt concurrently to ChatGPT, Gemini, Grok, DeepSeek, Claude and Ollama, show each provider's real response, and let the user judge and score answers. It is **not yet connected**. Do not fabricate provider output or put provider keys in browser JavaScript. A secured server gateway and protected provider credentials are required before this game can be called functional.
-
+AI ARENA is catalog item 21 (game22/). Its page supports account sign-in, concurrent provider matches, per-answer ratings, history, and optional speech-to-text. It never presents replay fixtures as real model output. The API is separate from GitHub Pages and must be deployed with AI_MODE=live, production JWT and CORS settings, provider keys and active model identifiers. Each cloud competitor uses its own server-side provider API; Ollama requires a configured reachable endpoint. Without that configured API, the page reports that live play is unavailable.
 ## Controls and launchers
 
 WORLD FOOTBALL uses WASD/arrows, P to pass, Space to shoot, on-screen touch arrows and mouse selection. GOAL LINE is a penalty shootout; APEX CIRCUIT is an arcade racer. Run `install-launchers.ps1` on Windows to create named shortcuts for all released games in `Desktop/Game Bank Launchers`. TACTICS GRID uses an adaptive local heuristic opponent and needs no network or API key. APEX STRATEGY simulates six fictional drivers for ten laps; strategy calls change lap times, pit time, fuel, tyre wear, and event risk. PENALTY PRO resolves five shots and five saves with visible, adaptive directional probabilities. DEBATE ARENA runs offline with authored response fixtures and a rule-based scoring rubric; it does not claim a live language model. CASEFILE runs locally with three consistent authored mysteries and no live LLM claim. MARKET DUEL uses fictional prices and a local crossover strategy; it is not connected to securities markets.

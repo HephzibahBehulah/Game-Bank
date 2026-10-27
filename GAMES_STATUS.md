@@ -26,6 +26,7 @@ Updated 2026-10-27. Status changes to DONE only after implementation, playable e
 | 18 | DEBATE ARENA | DONE — local commit 31e30cf; 5 checks passed; debate browser-finished |
 | 19 | CASEFILE | DONE — local commit a397ea4; 5 checks passed; case solved in browser |
 | 20 | MARKET DUEL | DONE — local commit 4322eee; 5 checks passed; 30-day match browser-finished |
+| 21 | AI ARENA | IN PROGRESS — game and direct-provider API source built; API deployment and six provider configurations still required for live matches |
 
 ## First 20-game expansion request
 
@@ -218,5 +219,6 @@ The changes listed above are included in main commit 2cdaa87. GitHub received th
 ## Update rule
 
 After each tested full playthrough, mark that single game DONE, record its commit and test evidence here, and continue to the next pending item. Keep web catalog numbering and couch-suite numbering separate.
+
 
 

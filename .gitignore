@@ -1,2 +1,8 @@
 .local-tools/
 couch-suite/.godot/
+
+platform/.env
+platform/**/.env
+platform/**/*.db
+platform/**/__pycache__/
+platform/**/.pytest_cache/
