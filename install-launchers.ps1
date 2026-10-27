@@ -17,7 +17,13 @@ $games = @(
   @{ Name = "11 WORLD FOOTBALL - Season Play"; Path = "game11/" },
   @{ Name = "12 CORTEX PRIME - IQ"; Path = "game12/" },
   @{ Name = "13 SYNAPSE SPRINT - Memory"; Path = "game13/" },
-  @{ Name = "14 BILLIONAIRE CHALLENGE"; Path = "game14/" }
+  @{ Name = "14 BILLIONAIRE CHALLENGE"; Path = "game14/" },
+  @{ Name = "15 TACTICS GRID - AI Tactics Arena"; Path = "game15/" },
+  @{ Name = "16 APEX STRATEGY - Race Engineer"; Path = "game16/" },
+  @{ Name = "17 PENALTY PRO - Adaptive Shootout"; Path = "game17/" },
+  @{ Name = "18 DEBATE ARENA - AI Debate"; Path = "game18/" },
+  @{ Name = "19 CASEFILE - AI Detective"; Path = "game19/" },
+  @{ Name = "20 MARKET DUEL - AI Trader"; Path = "game20/" }
 )
 $utf8 = New-Object System.Text.UTF8Encoding($false)
 $crlf = [char]13 + [char]10

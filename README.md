@@ -18,6 +18,12 @@ A growing library of individual browser games. GitHub Pages publishes the catalo
 12. CORTEX PRIME — sequences, matrices, hidden-rule reasoning
 13. SYNAPSE SPRINT — working-memory sequence challenge
 14. BILLIONAIRE CHALLENGE — 15-question quiz ladder with lifelines
+15. TACTICS GRID — turn-based 8×8 squad tactics against a legal-move heuristic AI
+16. APEX STRATEGY — 10-lap race manager with tyre, fuel, aggression, pit, weather and incident strategy
+17. PENALTY PRO — 10-round adaptive penalty shootout; keeper and striker tendencies update from player direction choices
+18. DEBATE ARENA — three-round debate with authored replay responses and a transparent scoring rubric
+19. CASEFILE — three deterministic mysteries with suspect interviews and a ten-question accusation limit
+20. MARKET DUEL — 30-day fictional stock-market game versus an observable moving-average AI
 
 ## Progression
 
@@ -37,7 +43,7 @@ The planned AI arena must send one text or speech-transcribed prompt concurrentl
 
 ## Controls and launchers
 
-WORLD FOOTBALL uses WASD/arrows, P to pass, Space to shoot, on-screen touch arrows and mouse selection. GOAL LINE is a penalty shootout; APEX CIRCUIT is an arcade racer. Run `install-launchers.ps1` on Windows to create named shortcuts for all released games in `Desktop/Game Bank Launchers`.
+WORLD FOOTBALL uses WASD/arrows, P to pass, Space to shoot, on-screen touch arrows and mouse selection. GOAL LINE is a penalty shootout; APEX CIRCUIT is an arcade racer. Run `install-launchers.ps1` on Windows to create named shortcuts for all released games in `Desktop/Game Bank Launchers`. TACTICS GRID uses an adaptive local heuristic opponent and needs no network or API key. APEX STRATEGY simulates six fictional drivers for ten laps; strategy calls change lap times, pit time, fuel, tyre wear, and event risk. PENALTY PRO resolves five shots and five saves with visible, adaptive directional probabilities. DEBATE ARENA runs offline with authored response fixtures and a rule-based scoring rubric; it does not claim a live language model. CASEFILE runs locally with three consistent authored mysteries and no live LLM claim. MARKET DUEL uses fictional prices and a local crossover strategy; it is not connected to securities markets.
 
 ## Build and publish
 

@@ -1,0 +1,12 @@
+import{TOPICS,makeDebate,submitRound}from"./engine.js";
+const $=s=>document.querySelector(s);let game=makeDebate();
+$("#topic").innerHTML=TOPICS.map(t=>'<option value="'+t.id+'">'+t.title+"</option>").join("");
+function showTopic(){$("#question").textContent=TOPICS.find(t=>t.id===$("#topic").value).question}
+function metrics(s){return'<div class="metric"><span>Logic</span><b>'+s.logic+'</b></div><div class="metric"><span>Evidence</span><b>'+s.evidence+'</b></div><div class="metric"><span>Rhetoric</span><b>'+s.rhetoric+'</b></div><div class="metric"><span>Total</span><b>'+s.total+'/100</b></div>'}
+function render(){$("#round").textContent=game.round;$("#player-wins").textContent=game.wins.player;$("#ai-wins").textContent=game.wins.ai;$("#history").innerHTML=game.history.map(r=>'<li>Round '+r.round+': '+r.topic+' — '+(r.winner==="player"?"you win":r.winner==="ai"?"opponent wins":"tie")+"</li>").join("")}
+$("#topic").addEventListener("change",showTopic);
+$("#begin").addEventListener("click",()=>{$("#start").hidden=true;$("#play").hidden=false;showTopic()});
+$("#submit").addEventListener("click",()=>{try{const r=submitRound(game,{topicId:$("#topic").value,argument:$("#argument").value});$("#validation").textContent="";$("#play").hidden=true;$("#result").hidden=false;$("#round-result").textContent=r.winner==="player"?"Round "+r.round+" · You win this round":r.winner==="ai"?"Round "+r.round+" · Opponent wins this round":"Round "+r.round+" · Draw";$("#player-score").innerHTML=metrics(r.player);$("#ai-score").innerHTML=metrics(r.ai);$("#ai-text").textContent=r.aiText;$("#next").textContent=game.complete?"VIEW FINAL RESULT":"NEXT ROUND";render()}catch(e){$("#validation").textContent=e.message}});
+$("#next").addEventListener("click",()=>{if(game.complete){$("#result").hidden=true;$("#finish").hidden=false;$("#finish-title").textContent=game.winner==="player"?"DEBATE WON":game.winner==="ai"?"DEBATE LOST":"DEBATE DRAW";$("#finish-copy").textContent="Final best-of-three: you "+game.wins.player+", opponent "+game.wins.ai+", ties "+game.wins.tie+". Aggregate rubric score "+game.total.player+"–"+game.total.ai+".";return}$("#result").hidden=true;$("#play").hidden=false;$("#argument").value="";$("#topic").selectedIndex=game.round%TOPICS.length;showTopic()});
+function reset(){game=makeDebate();$("#start").hidden=false;$("#play").hidden=true;$("#result").hidden=true;$("#finish").hidden=true;$("#argument").value="";render()}
+$("#restart").addEventListener("click",reset);$("#again").addEventListener("click",reset);render();

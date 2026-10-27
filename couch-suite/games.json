@@ -1,0 +1,608 @@
+[
+  {
+    "id": 1,
+    "title": "Kart Grand Prix",
+    "category": "Racing",
+    "launchable": true,
+    "scene": "res://games/kart_grand_prix.tscn"
+  },
+  {
+    "id": 2,
+    "title": "Rally Stage Time Trial",
+    "category": "Racing",
+    "launchable": true,
+    "scene": "res://games/rally_stage_time_trial.tscn"
+  },
+  {
+    "id": 3,
+    "title": "Formula Sprint",
+    "category": "Racing",
+    "launchable": true,
+    "scene": "res://games/formula_sprint.tscn"
+  },
+  {
+    "id": 4,
+    "title": "Truck Trial",
+    "category": "Racing",
+    "launchable": true,
+    "scene": "res://games/truck_trial.tscn"
+  },
+  {
+    "id": 5,
+    "title": "Motorcycle Hill Climb",
+    "category": "Racing",
+    "launchable": true,
+    "scene": "res://games/motorcycle_hill_climb.tscn"
+  },
+  {
+    "id": 6,
+    "title": "Soapbox Derby",
+    "category": "Racing",
+    "launchable": false
+  },
+  {
+    "id": 7,
+    "title": "Hovercraft Time Attack",
+    "category": "Racing",
+    "launchable": false
+  },
+  {
+    "id": 8,
+    "title": "Stock Car Oval",
+    "category": "Racing",
+    "launchable": false
+  },
+  {
+    "id": 9,
+    "title": "Monster Truck Arena",
+    "category": "Racing",
+    "launchable": false
+  },
+  {
+    "id": 10,
+    "title": "Drone Racing",
+    "category": "Racing",
+    "launchable": false
+  },
+  {
+    "id": 11,
+    "title": "Boat Racing",
+    "category": "Racing",
+    "launchable": false
+  },
+  {
+    "id": 12,
+    "title": "Snowmobile Sprint",
+    "category": "Racing",
+    "launchable": false
+  },
+  {
+    "id": 13,
+    "title": "5-a-Side Street Football",
+    "category": "Football",
+    "launchable": false
+  },
+  {
+    "id": 14,
+    "title": "Penalty Shootout Pro",
+    "category": "Football",
+    "launchable": false
+  },
+  {
+    "id": 15,
+    "title": "Freekick Challenge",
+    "category": "Football",
+    "launchable": false
+  },
+  {
+    "id": 16,
+    "title": "Headers & Volleys",
+    "category": "Football",
+    "launchable": false
+  },
+  {
+    "id": 17,
+    "title": "Goalkeeper Hero",
+    "category": "Football",
+    "launchable": false
+  },
+  {
+    "id": 18,
+    "title": "Football Tennis",
+    "category": "Football",
+    "launchable": false
+  },
+  {
+    "id": 19,
+    "title": "Futsal Tournament",
+    "category": "Football",
+    "launchable": false
+  },
+  {
+    "id": 20,
+    "title": "Crossbar Challenge",
+    "category": "Football",
+    "launchable": false
+  },
+  {
+    "id": 21,
+    "title": "Keepy-Uppy Battle",
+    "category": "Football",
+    "launchable": false
+  },
+  {
+    "id": 22,
+    "title": "Football Golf",
+    "category": "Football",
+    "launchable": false
+  },
+  {
+    "id": 23,
+    "title": "Wall Ball 1v1",
+    "category": "Football",
+    "launchable": false
+  },
+  {
+    "id": 24,
+    "title": "Street Football 3v3 Tournament",
+    "category": "Football",
+    "launchable": false
+  },
+  {
+    "id": 25,
+    "title": "2v2 Street Basketball",
+    "category": "Basketball",
+    "launchable": false
+  },
+  {
+    "id": 26,
+    "title": "3-Point Contest",
+    "category": "Basketball",
+    "launchable": false
+  },
+  {
+    "id": 27,
+    "title": "Slam Dunk Contest",
+    "category": "Basketball",
+    "launchable": false
+  },
+  {
+    "id": 28,
+    "title": "Free Throw Pressure",
+    "category": "Basketball",
+    "launchable": false
+  },
+  {
+    "id": 29,
+    "title": "1v1 Basketball",
+    "category": "Basketball",
+    "launchable": false
+  },
+  {
+    "id": 30,
+    "title": "Horse",
+    "category": "Basketball",
+    "launchable": false
+  },
+  {
+    "id": 31,
+    "title": "Tennis Singles",
+    "category": "Racket Sports",
+    "launchable": false
+  },
+  {
+    "id": 32,
+    "title": "Tennis Doubles",
+    "category": "Racket Sports",
+    "launchable": false
+  },
+  {
+    "id": 33,
+    "title": "Table Tennis",
+    "category": "Racket Sports",
+    "launchable": false
+  },
+  {
+    "id": 34,
+    "title": "Badminton",
+    "category": "Racket Sports",
+    "launchable": false
+  },
+  {
+    "id": 35,
+    "title": "Squash",
+    "category": "Racket Sports",
+    "launchable": false
+  },
+  {
+    "id": 36,
+    "title": "Padel",
+    "category": "Racket Sports",
+    "launchable": false
+  },
+  {
+    "id": 37,
+    "title": "Boxing 2P",
+    "category": "Combat & Party",
+    "launchable": false
+  },
+  {
+    "id": 38,
+    "title": "Wrestling",
+    "category": "Combat & Party",
+    "launchable": false
+  },
+  {
+    "id": 39,
+    "title": "Sumo",
+    "category": "Combat & Party",
+    "launchable": false
+  },
+  {
+    "id": 40,
+    "title": "Sword Duel",
+    "category": "Combat & Party",
+    "launchable": false
+  },
+  {
+    "id": 41,
+    "title": "Kung Fu Arena",
+    "category": "Combat & Party",
+    "launchable": false
+  },
+  {
+    "id": 42,
+    "title": "Laser Tag",
+    "category": "Combat & Party",
+    "launchable": false
+  },
+  {
+    "id": 43,
+    "title": "Paintball",
+    "category": "Combat & Party",
+    "launchable": false
+  },
+  {
+    "id": 44,
+    "title": "Dodgeball",
+    "category": "Combat & Party",
+    "launchable": false
+  },
+  {
+    "id": 45,
+    "title": "2D Platformer Campaign",
+    "category": "Platform",
+    "launchable": false
+  },
+  {
+    "id": 46,
+    "title": "Endless Runner (Themed)",
+    "category": "Platform",
+    "launchable": false
+  },
+  {
+    "id": 47,
+    "title": "Puzzle Platformer",
+    "category": "Platform",
+    "launchable": false
+  },
+  {
+    "id": 48,
+    "title": "Speedrun Platformer",
+    "category": "Platform",
+    "launchable": false
+  },
+  {
+    "id": 49,
+    "title": "Co-op Platformer",
+    "category": "Platform",
+    "launchable": false
+  },
+  {
+    "id": 50,
+    "title": "Vertical Climbing",
+    "category": "Platform",
+    "launchable": false
+  },
+  {
+    "id": 51,
+    "title": "One-Button Platformer",
+    "category": "Platform",
+    "launchable": false
+  },
+  {
+    "id": 52,
+    "title": "Gravity-Flip Platformer",
+    "category": "Platform",
+    "launchable": false
+  },
+  {
+    "id": 53,
+    "title": "Tetris-Style Block Drop",
+    "category": "Puzzles",
+    "launchable": false
+  },
+  {
+    "id": 54,
+    "title": "Match-3 Battle",
+    "category": "Puzzles",
+    "launchable": false
+  },
+  {
+    "id": 55,
+    "title": "Sokoban (Box Push)",
+    "category": "Puzzles",
+    "launchable": false
+  },
+  {
+    "id": 56,
+    "title": "Pipe Connection",
+    "category": "Puzzles",
+    "launchable": false
+  },
+  {
+    "id": 57,
+    "title": "2048 Battle",
+    "category": "Puzzles",
+    "launchable": false
+  },
+  {
+    "id": 58,
+    "title": "Minesweeper Race",
+    "category": "Puzzles",
+    "launchable": false
+  },
+  {
+    "id": 59,
+    "title": "Sudoku",
+    "category": "Puzzles",
+    "launchable": false
+  },
+  {
+    "id": 60,
+    "title": "Word Search Battle",
+    "category": "Puzzles",
+    "launchable": false
+  },
+  {
+    "id": 61,
+    "title": "Top-Down Twin-Stick Shooter",
+    "category": "Shooters",
+    "launchable": false
+  },
+  {
+    "id": 62,
+    "title": "Side-Scrolling Shooter",
+    "category": "Shooters",
+    "launchable": false
+  },
+  {
+    "id": 63,
+    "title": "First-Person Arena Shooter",
+    "category": "Shooters",
+    "launchable": false
+  },
+  {
+    "id": 64,
+    "title": "Tower Defense Shooter",
+    "category": "Shooters",
+    "launchable": false
+  },
+  {
+    "id": 65,
+    "title": "Bullet Hell",
+    "category": "Shooters",
+    "launchable": false
+  },
+  {
+    "id": 66,
+    "title": "Zombie Survival",
+    "category": "Shooters",
+    "launchable": false
+  },
+  {
+    "id": 67,
+    "title": "Boss Rush",
+    "category": "Shooters",
+    "launchable": false
+  },
+  {
+    "id": 68,
+    "title": "Space Shooter",
+    "category": "Shooters",
+    "launchable": false
+  },
+  {
+    "id": 69,
+    "title": "Chess",
+    "category": "Strategy",
+    "launchable": false
+  },
+  {
+    "id": 70,
+    "title": "Checkers",
+    "category": "Strategy",
+    "launchable": false
+  },
+  {
+    "id": 71,
+    "title": "Backgammon",
+    "category": "Strategy",
+    "launchable": false
+  },
+  {
+    "id": 72,
+    "title": "Reversi (Othello)",
+    "category": "Strategy",
+    "launchable": false
+  },
+  {
+    "id": 73,
+    "title": "Connect Four",
+    "category": "Strategy",
+    "launchable": false
+  },
+  {
+    "id": 74,
+    "title": "Battleship",
+    "category": "Strategy",
+    "launchable": false
+  },
+  {
+    "id": 75,
+    "title": "Risk-Style Map Game",
+    "category": "Strategy",
+    "launchable": false
+  },
+  {
+    "id": 76,
+    "title": "Catan-Style Resource Game",
+    "category": "Strategy",
+    "launchable": false
+  },
+  {
+    "id": 77,
+    "title": "Minigame Collection",
+    "category": "Party Games",
+    "launchable": false
+  },
+  {
+    "id": 78,
+    "title": "Trivia Battle",
+    "category": "Party Games",
+    "launchable": false
+  },
+  {
+    "id": 79,
+    "title": "Drawing Guess Game",
+    "category": "Party Games",
+    "launchable": false
+  },
+  {
+    "id": 80,
+    "title": "Word Race",
+    "category": "Party Games",
+    "launchable": false
+  },
+  {
+    "id": 81,
+    "title": "Reaction Battle",
+    "category": "Party Games",
+    "launchable": false
+  },
+  {
+    "id": 82,
+    "title": "Tower Stack Battle",
+    "category": "Party Games",
+    "launchable": false
+  },
+  {
+    "id": 83,
+    "title": "Sumo Push Party",
+    "category": "Party Games",
+    "launchable": false
+  },
+  {
+    "id": 84,
+    "title": "Bomb Tag",
+    "category": "Party Games",
+    "launchable": false
+  },
+  {
+    "id": 85,
+    "title": "Golf 9 Holes",
+    "category": "Sports",
+    "launchable": false
+  },
+  {
+    "id": 86,
+    "title": "Cricket 5 Overs",
+    "category": "Sports",
+    "launchable": false
+  },
+  {
+    "id": 87,
+    "title": "Volleyball 2v2",
+    "category": "Sports",
+    "launchable": false
+  },
+  {
+    "id": 88,
+    "title": "Table Tennis Tournament",
+    "category": "Sports",
+    "launchable": false
+  },
+  {
+    "id": 89,
+    "title": "Bowling",
+    "category": "Sports",
+    "launchable": false
+  },
+  {
+    "id": 90,
+    "title": "Pool / 8-Ball",
+    "category": "Sports",
+    "launchable": false
+  },
+  {
+    "id": 91,
+    "title": "Darts",
+    "category": "Sports",
+    "launchable": false
+  },
+  {
+    "id": 92,
+    "title": "Air Hockey",
+    "category": "Sports",
+    "launchable": false
+  },
+  {
+    "id": 93,
+    "title": "Rhythm Tap",
+    "category": "Rhythm & Co-op",
+    "launchable": false
+  },
+  {
+    "id": 94,
+    "title": "Dance Battle",
+    "category": "Rhythm & Co-op",
+    "launchable": false
+  },
+  {
+    "id": 95,
+    "title": "Karaoke Battle",
+    "category": "Rhythm & Co-op",
+    "launchable": false
+  },
+  {
+    "id": 96,
+    "title": "Drum Hero",
+    "category": "Rhythm & Co-op",
+    "launchable": false
+  },
+  {
+    "id": 97,
+    "title": "Cooking Rush 2P",
+    "category": "Rhythm & Co-op",
+    "launchable": false
+  },
+  {
+    "id": 98,
+    "title": "Overcooked-Style Chaos",
+    "category": "Rhythm & Co-op",
+    "launchable": false
+  },
+  {
+    "id": 99,
+    "title": "Escape Room Co-op",
+    "category": "Rhythm & Co-op",
+    "launchable": false
+  },
+  {
+    "id": 100,
+    "title": "Tower Defense Co-op",
+    "category": "Rhythm & Co-op",
+    "launchable": false
+  }
+]
+
