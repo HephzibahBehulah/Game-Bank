@@ -59,7 +59,8 @@
     "id": 9,
     "title": "Monster Truck Arena",
     "category": "Racing",
-    "launchable": false
+    "launchable": true,
+    "scene": "res://games/monster_truck_arena.tscn"
   },
   {
     "id": 10,
