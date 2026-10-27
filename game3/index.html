@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OHM HUNTER</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Orbitron,sans-serif;background:#0a0f1a;color:#0ff;min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:1rem}
+h1{font-size:2rem;text-shadow:0 0 15px #0ff;margin:1rem}
+.hud{display:flex;gap:2rem;margin:1rem;font-family:'Share Tech Mono'}
+.card{background:#111a2a;border:1px solid #0ff4;border-radius:10px;padding:1.5rem;max-width:400px;text-align:center}
+.q{font-size:1.3rem;margin:1rem 0;font-family:'Share Tech Mono'}
+.options{display:grid;gap:.6rem}
+button{padding:.7rem;background:transparent;border:1px solid #0ff;color:#0ff;font-family:Orbitron;cursor:pointer;border-radius:6px}
+button:hover{background:#0ff2}
+.msg{margin-top:1rem;min-height:1.5rem}
+</style>
+</head>
+<body>
+<h1>OHM HUNTER</h1>
+<div class="hud"><div>Score: <span id="s">0</span></div><div>Q: <span id="n">1</span>/10</div></div>
+<div class="card">
+  <div class="q" id="q">Loading...</div>
+  <div class="options" id="opts"></div>
+  <div class="msg" id="msg"></div>
+</div>
+<script>
+const qs=[
+{q:"Ohm's Law: V = ?",a:["I × R","I + R","I / R","R / I"],c:0},
+{q:"Unit of resistance?",a:["Volt","Ampere","Ohm","Watt"],c:2},
+{q:"Series resistors 10Ω + 20Ω = ?",a:["30Ω","15Ω","200Ω","5Ω"],c:0},
+{q:"Power formula?",a:["V × I","V + I","V / I","I / V"],c:0},
+{q:"LED stands for?",a:["Light Emitting Diode","Low Energy Device","Linear Electric Drive","None"],c:0},
+{q:"Color code: Black = ?",a:["0","1","2","5"],c:0},
+{q:"Parallel resistors decrease total R?",a:["True","False"],c:0},
+{q:"Current unit?",a:["Volt","Ohm","Ampere","Farad"],c:2},
+{q:"Capacitor stores?",a:["Current","Charge","Resistance","Heat"],c:1},
+{q:"Short circuit has very ___ resistance",a:["High","Low","Infinite","Medium"],c:1}
+];
+let i=0,score=0;
+function show(){
+  if(i>=qs.length){document.getElementById('q').textContent='Done! Score: '+score;document.getElementById('opts').innerHTML='';return}
+  document.getElementById('n').textContent=i+1;
+  document.getElementById('q').textContent=qs[i].q;
+  document.getElementById('opts').innerHTML=qs[i].a.map((o,x)=>`<button onclick="ans(${x})">${o}</button>`).join('');
+  document.getElementById('msg').textContent='';
+}
+function ans(x){
+  if(x===qs[i].c){score+=10;document.getElementById('msg').textContent='Correct!';document.getElementById('msg').style.color='#0f8'}
+  else{document.getElementById('msg').textContent='Wrong';document.getElementById('msg').style.color='#f44'}
+  document.getElementById('s').textContent=score;
+  i++;setTimeout(show,800);
+}
+show();
+</script>
+</body></html>
