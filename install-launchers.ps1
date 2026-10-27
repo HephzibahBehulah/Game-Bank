@@ -11,7 +11,9 @@ $games = @(
   @{ Name = "05 RESISTOR MATCH"; Path = "game5/" },
   @{ Name = "06 CAPACITOR CHARGE"; Path = "game6/" },
   @{ Name = "07 BINARY FLASH"; Path = "game7/" },
-  @{ Name = "08 FUSE BOX"; Path = "game8/" }
+  @{ Name = "08 FUSE BOX"; Path = "game8/" },
+  @{ Name = "09 GOAL LINE - Football Penalties"; Path = "game9/" },
+  @{ Name = "10 APEX CIRCUIT - Racing"; Path = "game10/" }
 )
 $utf8 = New-Object System.Text.UTF8Encoding($false)
 $crlf = [char]13 + [char]10
