@@ -6,7 +6,7 @@ This is a separate Godot 4 local-multiplayer project in the Game-Bank repository
 
 - Godot 4.7 or newer.
 - Open `couch-suite/project.godot` and run the project (F6/F5 in the editor).
-- Use the hub category filters to browse the 100-game roadmap. A game becomes launchable only when its implementation and playable test are complete. Kart Grand Prix, Rally Stage Time Trial, Formula Sprint, Truck Trial, Motorcycle Hill Climb, Soapbox Derby, Hovercraft Time Attack, and Stock Car Oval are the eight completed suite entries; the remaining games stay visibly locked until their implementations and playable checks are complete.
+- Use the hub category filters to browse the 100-game roadmap. A game becomes launchable only when its implementation and playable test are complete. Kart Grand Prix, Rally Stage Time Trial, Formula Sprint, Truck Trial, Motorcycle Hill Climb, Soapbox Derby, Hovercraft Time Attack, Stock Car Oval, and Monster Truck Arena are the nine completed suite entries; the remaining games stay visibly locked until their implementations and playable checks are complete.
 
 ## Controllers
 
