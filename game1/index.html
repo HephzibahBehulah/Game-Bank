@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEON PULSE – LED Light Designer</title>
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="scanlines"></div>
+
+  <header>
+    <h1>NEON PULSE</h1>
+    <p class="subtitle">LED Light Designer • Sci-Fi Edition</p>
+  </header>
+
+  <main>
+    <div class="panel left-panel">
+      <h2>Color Controls</h2>
+      <div class="control">
+        <label>Red</label>
+        <input type="range" id="red" min="0" max="255" value="0">
+        <span id="red-val">0</span>
+      </div>
+      <div class="control">
+        <label>Green</label>
+        <input type="range" id="green" min="0" max="255" value="200">
+        <span id="green-val">200</span>
+      </div>
+      <div class="control">
+        <label>Blue</label>
+        <input type="range" id="blue" min="0" max="255" value="255">
+        <span id="blue-val">255</span>
+      </div>
+      <div class="control">
+        <label>Brightness</label>
+        <input type="range" id="brightness" min="10" max="100" value="80">
+        <span id="bright-val">80%</span>
+      </div>
+      <div class="control">
+        <label>Pulse Speed</label>
+        <input type="range" id="speed" min="0" max="10" value="3">
+        <span id="speed-val">3</span>
+      </div>
+      <button id="random-btn" class="btn">Random Neon</button>
+      <button id="save-btn" class="btn">Save Preset</button>
+    </div>
+
+    <div class="stage">
+      <div id="led-board" class="led-board"></div>
+      <div class="hex-display">HEX: <span id="hex-code">#00C8FF</span></div>
+    </div>
+
+    <div class="panel right-panel">
+      <h2>Presets</h2>
+      <div id="presets" class="presets">
+        <button class="preset" data-r="255" data-g="0" data-b="80">Cyber Pink</button>
+        <button class="preset" data-r="0" data-g="255" data-b="200">Matrix Green</button>
+        <button class="preset" data-r="0" data-g="150" data-b="255">Neon Blue</button>
+        <button class="preset" data-r="255" data-g="50" data-b="0">Plasma Orange</button>
+        <button class="preset" data-r="180" data-g="0" data-b="255">Purple Haze</button>
+        <button class="preset" data-r="255" data-g="255" data-b="0">Solar Flare</button>
+      </div>
+      <h2>Mode</h2>
+      <div class="modes">
+        <button class="mode-btn active" data-mode="solid">Solid</button>
+        <button class="mode-btn" data-mode="pulse">Pulse</button>
+        <button class="mode-btn" data-mode="wave">Wave</button>
+        <button class="mode-btn" data-mode="spark">Spark</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>NEON PULSE • Built for Hephzibah Behulah • Game-Bank</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

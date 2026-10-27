@@ -1,42 +1,24 @@
-# NEON PULSE – LED Light Designer
+# Hephzibah Behulah Game Bank
 
-Sci-fi interactive LED color and light design game.
+Game Bank is a growing collection of standalone browser games. The root page is the launcher for the current library.
 
-## How to Play
-1. Open `index.html` in any modern browser (or visit the GitHub Pages link after deploy).
-2. Use the RGB sliders to mix any color.
-3. Adjust Brightness and Pulse Speed.
-4. Choose a Mode:
-   - **Solid** – steady glow
-   - **Pulse** – breathing light
-   - **Wave** – moving wave across the board
-   - **Spark** – random sparking LEDs
-5. Click presets for instant sci-fi colors.
-6. Click **Random Neon** for surprise colors.
-7. **Save Preset** to keep your favorite mixes.
+## Games available
+1. NEON PULSE — LED Light Designer
+2. CIRCUIT RUSH — Wire the Power
+3. OHM HUNTER — Electronics quiz
+4. VOLT DODGE — Arcade dodging
+5. RESISTOR MATCH — Memory matching
+6. CAPACITOR CHARGE — Timing challenge
+7. BINARY FLASH — Binary decoding
+8. FUSE BOX — Electrical logic puzzle
 
-## Features
-- 8×8 LED matrix
-- Real-time color mixing (RGB + brightness)
-- 4 animation modes with smooth effects
-- Sci-fi neon UI with glow and scanlines
-- Fully responsive (desktop + mobile)
-- No dependencies – pure HTML/CSS/JS
+Each title currently lives in its own folder and can be launched from the root library. The Windows script `install-launchers.ps1` creates named web shortcuts in a `Game Bank Launchers` folder on the Desktop. A browser cannot silently create Desktop files.
 
-## Controls
-| Control       | Action                     |
-|---------------|----------------------------|
-| Red/Green/Blue| Mix the LED color          |
-| Brightness    | Overall intensity          |
-| Pulse Speed   | Animation speed            |
-| Modes         | Solid / Pulse / Wave / Spark |
-| Presets       | Instant color themes       |
-| Random Neon   | Generate random color      |
-| Save Preset   | Store current mix          |
+## Run locally
+Open `index.html` in a modern browser. The pages use plain HTML, CSS, and JavaScript.
 
-## Tech
-- Vanilla JavaScript
-- CSS animations & glow effects
-- requestAnimationFrame for smooth LED updates
+## Publish
+GitHub Pages is configured to publish the `main` branch from the repository root. A push to `main` triggers a Pages deployment. Verify the published site before sharing shortcuts.
 
-Built for **Hephzibah Behulah** · Game-Bank repository
+## Current scope
+This repository currently has eight playable games. The 10,000-game target, AI competition, user accounts, admin dashboard, verified shared scores, native store builds, and PlayStation releases are not complete. Do not describe generated rounds or levels as 10,000 distinct games.
