@@ -6,7 +6,7 @@ This is a separate Godot 4 local-multiplayer project in the Game-Bank repository
 
 - Godot 4.7 or newer.
 - Open `couch-suite/project.godot` and run the project (F6/F5 in the editor).
-- Use the hub category filters to browse the 100-game roadmap. A game becomes launchable only when its implementation and playable test are complete. Kart Grand Prix, Rally Stage Time Trial, Formula Sprint, Truck Trial, Motorcycle Hill Climb, and Soapbox Derby are the six completed suite entries; the remaining games stay visibly locked until their implementations and playable checks are complete.
+- Use the hub category filters to browse the 100-game roadmap. A game becomes launchable only when its implementation and playable test are complete. Kart Grand Prix, Rally Stage Time Trial, Formula Sprint, Truck Trial, Motorcycle Hill Climb, Soapbox Derby, and Hovercraft Time Attack are the seven completed suite entries; the remaining games stay visibly locked until their implementations and playable checks are complete.
 
 ## Controllers
 
@@ -19,5 +19,6 @@ Each completed game ships with `README.md` and `TEST.md`. Automated mechanics ch
 ## Project boundaries
 
 This Godot suite is not the existing GitHub Pages web hub and does not claim a PlayStation 5 or PlayStation 6 build. Those consoles require official platform access, SDKs, and certification. Online AI competitions, real-world licensed football rosters and imagery, accounts, and an admin service require separate provider, licensing, identity, and hosted-backend work. They must not be represented as included unless implemented and verified.
+
 
 
