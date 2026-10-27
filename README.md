@@ -25,6 +25,7 @@ A growing library of individual browser games. GitHub Pages publishes the catalo
 19. CASEFILE — three deterministic mysteries with suspect interviews and a ten-question accusation limit
 20. MARKET DUEL — 30-day fictional stock-market game versus an observable moving-average AI
 21. AI ARENA — sends a prompt concurrently to ChatGPT, Gemini, DeepSeek, Claude, Grok and Ollama; authenticated players compare live answers and save ratings through a protected API
+22. LAST SIGNAL — top-down survival battle with nine tactical bots, field supplies, solid cover, and a closing safe zone
 
 ## Progression
 

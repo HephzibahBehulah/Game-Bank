@@ -26,7 +26,8 @@ Updated 2026-10-27. Status changes to DONE only after implementation, playable e
 | 18 | DEBATE ARENA | DONE — local commit 31e30cf; 5 checks passed; debate browser-finished |
 | 19 | CASEFILE | DONE — local commit a397ea4; 5 checks passed; case solved in browser |
 | 20 | MARKET DUEL | DONE — local commit 4322eee; 5 checks passed; 30-day match browser-finished |
-| 21 | AI ARENA | IN PROGRESS — game and direct-provider API source built; API deployment and six provider configurations still required for live matches |
+| 21 | AI ARENA | IN PROGRESS — secure API source exists; live providers still need secrets and API hosting |
+| 22 | LAST SIGNAL | IN PROGRESS — game logic and interface implemented; automated and browser playthrough pending |
 
 ## First 20-game expansion request
 
@@ -38,7 +39,7 @@ Updated 2026-10-27. Status changes to DONE only after implementation, playable e
 | 4 | AI Debate Arena | DONE — catalog entries 18 |
 | 5 | AI Detective | DONE — catalog entries 19 |
 | 6 | AI Stock Trader Showdown | DONE — catalog entries 20 |
-| 7 | AI Battle Royale (Top-Down 2D) | PAUSED — partial web draft in game21; not complete, browser-verified, or committed |
+| 7 | AI Battle Royale (Top-Down 2D) | IN PROGRESS — gameplay controller and catalog entry added; automated and browser playthrough still required |
 | 8 | Real Football (Soccer) Match Engine | PENDING |
 | 9 | Real Racing (Circuit) | PENDING |
 | 10 | Real Drag Racing | PENDING |
@@ -192,7 +193,7 @@ Separate Godot 4 target, preserving the current GitHub Pages hub. No suite game 
 | AI answer competition: ChatGPT, Gemini, Grok, DeepSeek, Claude, Ollama; user judging | PENDING — needs secured backend and actual provider credentials |
 | Shared accounts, cross-game progress, user dashboard and Hephzibah Behulah admin controls | PENDING |
 | Real football rosters, named players, clubs and seasons | PARTIAL — existing competition selections; verified rosters and likeness rights are not included |
-| 100,000–1,000,000 individual games and 10,000–100,000 authored levels each | PENDING — long-term target; current catalog has 20 games |
+| 100,000–1,000,000 individual games and 10,000–100,000 authored levels each | PENDING — long-term target; current catalog has 22 games |
 | PS5/PS6, Apple, Android and Windows store releases | PENDING — no platform certification or store releases |
 | Desktop launchers | PARTIAL — generator covers current catalog; not refreshed for the in-progress web draft |
 | GitHub push/deploy | DONE — main commit 2cdaa87 publishes 20 browser games; GitHub Pages run 40560350861 succeeded. Godot couch-suite source for games 1–5 is in main but is not exported for web. Direct local Git push still fails because the Windows credential helper cannot start. |

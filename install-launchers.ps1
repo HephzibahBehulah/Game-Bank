@@ -23,8 +23,9 @@ $games = @(
   @{ Name = "17 PENALTY PRO - Adaptive Shootout"; Path = "game17/" },
   @{ Name = "18 DEBATE ARENA - AI Debate"; Path = "game18/" },
   @{ Name = "19 CASEFILE - AI Detective"; Path = "game19/" },
-  @{ Name = "20 MARKET DUEL - AI Trader"; Path = "game20/" }
-  @{ Name = "21 AI ARENA - Six Model Competition"; Path = "game22/" }
+  @{ Name = "20 MARKET DUEL - AI Trader"; Path = "game20/" },
+  @{ Name = "21 AI ARENA - Six Model Competition"; Path = "game22/" },
+  @{ Name = "22 LAST SIGNAL - Battle Royale"; Path = "game21/" }
 )
 $utf8 = New-Object System.Text.UTF8Encoding($false)
 $crlf = [char]13 + [char]10
