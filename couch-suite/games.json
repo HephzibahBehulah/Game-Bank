@@ -45,7 +45,8 @@
     "id": 7,
     "title": "Hovercraft Time Attack",
     "category": "Racing",
-    "launchable": false
+    "launchable": true,
+    "scene": "res://games/hovercraft_time_attack.tscn"
   },
   {
     "id": 8,
