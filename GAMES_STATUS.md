@@ -81,7 +81,7 @@ Updated 2026-10-27. Status changes to DONE only after implementation, playable e
 
 ## 100-game couch multiplayer suite
 
-Separate Godot 4 target, preserving the current GitHub Pages hub. Nine suite games are implemented and pass their headless playable checks. Godot 4.7.2 stable is downloaded to an ignored local tools folder; physical-controller hardware validation remains outstanding.
+Separate Godot 4 target, preserving the current GitHub Pages hub. Ten suite games are implemented and pass their headless playable checks. Godot 4.7.2 stable is downloaded to an ignored local tools folder; physical-controller hardware validation remains outstanding.
 
 | Suite order | Game | Status |
 |---:|---|---|
@@ -94,7 +94,7 @@ Separate Godot 4 target, preserving the current GitHub Pages hub. Nine suite gam
 | 7 | Hovercraft Time Attack | DONE — eight complete water courses, gate and buoy physics, boost, gamepad flow, hub launch, and career save pass Godot 4.7.2 headless checks; physical controller not available for hardware validation |
 | 8 | Stock Car Oval | DONE — five authored ovals, six-car field, local two-player controls, drafting, tire temperature, contact damage, six-lap finishes, progression and hub launch pass Godot 4.7.2 headless checks; physical controller not available for hardware validation |
 | 9 | Monster Truck Arena | DONE — five authored arenas, six trucks, breakable targets, stunt scoring, AI field, timer/winner flow, gamepad pause, career save and hub registration pass Godot 4.7.2 headless checks; physical controller not available for hardware validation |
-| 10 | Drone Racing | PENDING |
+| 10 | Drone Racing | DONE — five authored routes, ordered gates, battery/boost, hazards, six-pilot field, three-lap win, gamepad pause, career save and hub registration pass Godot 4.7.2 headless checks; physical controller not available for hardware validation |
 | 11 | Boat Racing | PENDING |
 | 12 | Snowmobile Sprint | PENDING |
 | 13 | 5-a-Side Street Football | PENDING |
