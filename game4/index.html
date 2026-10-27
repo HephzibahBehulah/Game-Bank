@@ -18,29 +18,5 @@ canvas{border:2px solid #0ff4;background:#0a0a18;border-radius:8px}
 <h1>VOLT DODGE</h1>
 <div class="hud">Score: <span id="sc">0</span> | Avoid the sparks!</div>
 <canvas id="c" width="360" height="480"></canvas>
-<script>
-const c=document.getElementById('c'),x=c.getContext('2d');
-let px=180,py=420,sc=0,sp=[],keys={},over=false;
-document.onkeydown=e=>keys[e.key]=1;
-document.onkeyup=e=>keys[e.key]=0;
-function spawn(){sp.push({x:Math.random()*340+10,y:-20,s:2+Math.random()*3})}
-function loop(){
-  if(over)return;
-  x.fillStyle='#0a0a18';x.fillRect(0,0,360,480);
-  if(keys['ArrowLeft']||keys['a'])px-=5;
-  if(keys['ArrowRight']||keys['d'])px+=5;
-  px=Math.max(15,Math.min(345,px));
-  x.fillStyle='#0f8';x.beginPath();x.arc(px,py,14,0,6.3);x.fill();
-  if(Math.random()<0.04)spawn();
-  for(let i=sp.length-1;i>=0;i--){
-    let s=sp[i];s.y+=s.s;
-    x.fillStyle='#f44';x.beginPath();x.arc(s.x,s.y,8,0,6.3);x.fill();
-    if(Math.hypot(s.x-px,s.y-py)<20){over=true;document.querySelector('.hud').textContent='GAME OVER – Score: '+sc;return}
-    if(s.y>500){sp.splice(i,1);sc++}
-  }
-  document.getElementById('sc').textContent=sc;
-  requestAnimationFrame(loop);
-}
-loop();
-</script>
+<script src="../assets/game-levels.js"></script><script src="../assets/game4.js"></script>
 </body></html>

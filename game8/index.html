@@ -19,27 +19,9 @@ button{margin:0.5rem;padding:0.6rem 1.3rem;background:transparent;border:1px sol
 <body>
 <a class="hb-brand" href="../" aria-label="Hephzibah Behulah Game Bank home"><img src="../assets/hb-logo.svg" alt="Hephzibah Behulah logo"><span>HEPHZIBAH BEHULAH™<small>GAME BANK · PLAY · LEARN</small></span></a>
 <h1>FUSE BOX</h1>
-<div class="hud">Turn ALL switches ON</div>
+<div class="hud" id="level-puzzle">Loading level…</div>
 <div class="box" id="box"></div>
 <button id="check">CHECK</button>
 <div id="msg"></div>
-<script>
-const states=Array(9).fill(false);
-const box=document.getElementById('box');
-function render(){
-  box.innerHTML='';
-  states.forEach((on,i)=>{
-    const d=document.createElement('div');
-    d.className='sw'+(on?' on':'');
-    d.textContent=on?'⚡':'○';
-    d.onclick=()=>{states[i]=!states[i];render()};
-    box.appendChild(d);
-  });
-}
-document.getElementById('check').onclick=()=>{
-  if(states.every(s=>s)){document.getElementById('msg').textContent='All circuits powered!';document.getElementById('msg').style.color='#0f8'}
-  else{document.getElementById('msg').textContent='Still some fuses out';document.getElementById('msg').style.color='#f44'}
-};
-render();
-</script>
+<script src="../assets/game-levels.js"></script><script src="../assets/game8.js"></script>
 </body></html>

@@ -21,28 +21,5 @@ h1{margin:1rem;text-shadow:0 0 12px #0ff}
 <h1>RESISTOR MATCH</h1>
 <div class="hud">Moves: <span id="m">0</span> | Matches: <span id="mt">0</span>/8</div>
 <div class="grid" id="g"></div>
-<script>
-const vals=['10Ω','10Ω','22Ω','22Ω','47Ω','47Ω','100Ω','100Ω','220Ω','220Ω','1kΩ','1kΩ','4.7kΩ','4.7kΩ','10kΩ','10kΩ'];
-vals.sort(()=>Math.random()-0.5);
-let flips=[],moves=0,matches=0;
-const g=document.getElementById('g');
-vals.forEach((v,i)=>{
-  const d=document.createElement('div');
-  d.className='card';d.dataset.v=v;d.dataset.i=i;
-  d.onclick=()=>{
-    if(flips.length===2||d.classList.contains('flipped')||d.classList.contains('matched'))return;
-    d.classList.add('flipped');d.textContent=v;flips.push(d);
-    if(flips.length===2){
-      moves++;document.getElementById('m').textContent=moves;
-      if(flips[0].dataset.v===flips[1].dataset.v){
-        flips.forEach(c=>c.classList.add('matched'));matches++;document.getElementById('mt').textContent=matches;
-        flips=[];if(matches===8)alert('Complete! Moves: '+moves);
-      }else{
-        setTimeout(()=>{flips.forEach(c=>{c.classList.remove('flipped');c.textContent=''});flips=[]},700);
-      }
-    }
-  };
-  g.appendChild(d);
-});
-</script>
+<script src="../assets/game-levels.js"></script><script src="../assets/game5.js"></script>
 </body></html>
