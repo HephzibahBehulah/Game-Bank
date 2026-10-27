@@ -47,7 +47,8 @@ if (Test-Path -LiteralPath $godot) {
     @{ Name = "S06 SOAPBOX DERBY"; Scene = "res://games/soapbox_derby.tscn" },
     @{ Name = "S07 HOVERCRAFT TIME ATTACK"; Scene = "res://games/hovercraft_time_attack.tscn" },
     @{ Name = "S08 STOCK CAR OVAL"; Scene = "res://games/stock_car_oval.tscn" },
-    @{ Name = "S09 MONSTER TRUCK ARENA"; Scene = "res://games/monster_truck_arena.tscn" }
+    @{ Name = "S09 MONSTER TRUCK ARENA"; Scene = "res://games/monster_truck_arena.tscn" },
+    @{ Name = "S10 DRONE RACING"; Scene = "res://games/drone_racing.tscn" }
   )
   $shell = New-Object -ComObject WScript.Shell
   foreach ($game in $suiteGames) {
