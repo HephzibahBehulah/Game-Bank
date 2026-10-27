@@ -27,7 +27,7 @@ Updated 2026-10-27. Status changes to DONE only after implementation, playable e
 | 19 | CASEFILE | DONE — local commit a397ea4; 5 checks passed; case solved in browser |
 | 20 | MARKET DUEL | DONE — local commit 4322eee; 5 checks passed; 30-day match browser-finished |
 | 21 | AI ARENA | IN PROGRESS — secure API source exists; live providers still need secrets and API hosting |
-| 22 | LAST SIGNAL | IN PROGRESS — game logic and interface implemented; automated and browser playthrough pending |
+| 22 | LAST SIGNAL | DONE — six engine tests pass; deployed match started, player elimination, bot winner and result screen verified in browser |
 
 ## First 20-game expansion request
 
@@ -39,7 +39,7 @@ Updated 2026-10-27. Status changes to DONE only after implementation, playable e
 | 4 | AI Debate Arena | DONE — catalog entries 18 |
 | 5 | AI Detective | DONE — catalog entries 19 |
 | 6 | AI Stock Trader Showdown | DONE — catalog entries 20 |
-| 7 | AI Battle Royale (Top-Down 2D) | IN PROGRESS — gameplay controller and catalog entry added; automated and browser playthrough still required |
+| 7 | AI Battle Royale (Top-Down 2D) | DONE — Last Signal released as catalog game 22; complete live match and final result verified |
 | 8 | Real Football (Soccer) Match Engine | PENDING |
 | 9 | Real Racing (Circuit) | PENDING |
 | 10 | Real Drag Racing | PENDING |
