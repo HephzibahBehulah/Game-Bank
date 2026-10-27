@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FUSE BOX</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0f1a;color:#0ff;font-family:Orbitron;display:flex;flex-direction:column;align-items:center;min-height:100vh;padding:1rem}
+h1{margin:1rem;text-shadow:0 0 12px #0ff}
+.box{display:grid;grid-template-columns:repeat(3,70px);gap:10px;margin:1.5rem}
+.sw{width:70px;height:70px;background:#222;border:2px solid #0ff5;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;cursor:pointer}
+.sw.on{background:#0a3a2a;border-color:#0f8;box-shadow:0 0 12px #0f8}
+.hud{margin:0.5rem}
+button{margin:0.5rem;padding:0.6rem 1.3rem;background:transparent;border:1px solid #0ff;color:#0ff;font-family:Orbitron;cursor:pointer;border-radius:6px}
+</style>
+</head>
+<body>
+<h1>FUSE BOX</h1>
+<div class="hud">Turn ALL switches ON</div>
+<div class="box" id="box"></div>
+<button id="check">CHECK</button>
+<div id="msg"></div>
+<script>
+const states=Array(9).fill(false);
+const box=document.getElementById('box');
+function render(){
+  box.innerHTML='';
+  states.forEach((on,i)=>{
+    const d=document.createElement('div');
+    d.className='sw'+(on?' on':'');
+    d.textContent=on?'⚡':'○';
+    d.onclick=()=>{states[i]=!states[i];render()};
+    box.appendChild(d);
+  });
+}
+document.getElementById('check').onclick=()=>{
+  if(states.every(s=>s)){document.getElementById('msg').textContent='All circuits powered!';document.getElementById('msg').style.color='#0f8'}
+  else{document.getElementById('msg').textContent='Still some fuses out';document.getElementById('msg').style.color='#f44'}
+};
+render();
+</script>
+</body></html>

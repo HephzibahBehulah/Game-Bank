@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CAPACITOR CHARGE</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0f1a;color:#0ff;font-family:Orbitron;display:flex;flex-direction:column;align-items:center;min-height:100vh;padding:1rem}
+h1{margin:1rem;text-shadow:0 0 12px #0ff}
+.cap{width:120px;height:180px;border:4px solid #0ff;border-radius:8px;margin:1.5rem;position:relative;overflow:hidden;background:#111}
+.fill{position:absolute;bottom:0;width:100%;background:linear-gradient(#0ff,#08f);transition:height 0.1s}
+.hud{margin:0.5rem;font-size:1.1rem}
+button{margin:0.5rem;padding:0.7rem 1.5rem;background:transparent;border:1px solid #0ff;color:#0ff;font-family:Orbitron;cursor:pointer;border-radius:6px}
+button:hover{background:#0ff2}
+</style>
+</head>
+<body>
+<h1>CAPACITOR CHARGE</h1>
+<div class="hud">Charge: <span id="pct">0</span>% | Score: <span id="sc">0</span></div>
+<div class="cap"><div class="fill" id="fill"></div></div>
+<button id="charge">HOLD TO CHARGE</button>
+<button id="reset">RESET</button>
+<script>
+let charge=0,score=0,holding=false,timer;
+const fill=document.getElementById('fill'),pct=document.getElementById('pct'),sc=document.getElementById('sc');
+document.getElementById('charge').onmousedown=document.getElementById('charge').ontouchstart=()=>{holding=true};
+document.getElementById('charge').onmouseup=document.getElementById('charge').ontouchend=()=>{holding=false};
+document.getElementById('reset').onclick=()=>{charge=0;update()};
+function update(){fill.style.height=charge+'%';pct.textContent=Math.floor(charge);if(charge>=100){score++;sc.textContent=score;charge=0}}
+setInterval(()=>{if(holding&&charge<100){charge+=1.5;update()}else if(!holding&&charge>0){charge-=0.4;update()}},30);
+</script>
+</body></html>
