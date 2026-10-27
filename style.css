@@ -1,0 +1,216 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: #0a0a12;
+  color: #00f0ff;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.stars {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(2px 2px at 20px 30px, #eee, transparent),
+              radial-gradient(2px 2px at 40px 70px, rgbafff, transparent),
+              radial-gradient(1px 1px at 90px 40px, #fff, transparent);
+  background-size: 200px 200px;
+  opacity: 0.3;
+  animation: drift 60s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes drift {
+  from { transform: translateY(0); }
+  to { transform: translateY(-200px); }
+}
+
+.scanlines {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(rgba(18,16,16,0) 50%, rgba(0,0,0,0.15) 50%);
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+header {
+  text-align: center;
+  padding: 1.5rem;
+  position: relative;
+  z-index: 5;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 8px;
+  text-shadow: 0 0 20px #00f0ff, 0 0 40px #00f0ff, 0 0 60px #0088ff;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 20px #00f0ff, 0 0 40px #00f0ff; }
+  to { text-shadow: 0 0 30px #00f0ff, 0 0 60px #00f0ff, 0 0 80px #0088ff; }
+}
+
+.subtitle {
+  font-family: 'Share Tech Mono', monospace;
+  color: #88ffff;
+  margin-top: 0.5rem;
+  letter-spacing: 3px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 2rem 3rem;
+  position: relative;
+  z-index: 5;
+  flex-wrap: wrap;
+}
+
+.panel {
+  background: rgba(10, 20, 40, 0.85);
+  border: 1px solid #00f0ff44;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 240px;
+  box-shadow: 0 0 30px #00f0ff22;
+}
+
+.panel h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #00ffcc;
+  letter-spacing: 2px;
+}
+
+.control {
+  margin-bottom: 1.2rem;
+}
+
+.control label {
+  display: block;
+  font-size: 0.75rem;
+  margin-bottom: 0.3rem;
+  color: #88ccff;
+}
+
+.control input[type=range] {
+  width: 100%;
+  accent-color: #00f0ff;
+}
+
+.control span {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.85rem;
+  color: #00ffaa;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.6rem;
+  background: transparent;
+  border: 1px solid #00f0ff;
+  color: #00f0ff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: #00f0ff22;
+  box-shadow: 0 0 15px #00f0ff66;
+}
+
+.stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.led-board {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  padding: 20px;
+  background: #050510;
+  border: 2px solid #00f0ff33;
+  border-radius: 16px;
+  box-shadow: 0 0 40px #00f0ff22, inset 0 0 30px #000;
+}
+
+.led {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #111;
+  box-shadow: inset 0 0 8px #000;
+  transition: all 0.15s;
+}
+
+.hex-display {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.2rem;
+  color: #00ffcc;
+  background: rgba(0,0,0,0.6);
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #00f0ff44;
+}
+
+.presets {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.preset, .mode-btn {
+  padding: 0.55rem;
+  background: transparent;
+  border: 1px solid #00f0ff55;
+  color: #88eeff;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.25s;
+}
+
+.preset:hover, .mode-btn:hover, .mode-btn.active {
+  background: #00f0ff22;
+  border-color: #00f0ff;
+  box-shadow: 0 0 12px #00f0ff44;
+}
+
+.modes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.75rem;
+  color: #446688;
+  position: relative;
+  z-index: 5;
+}
+
+@media (max-width: 800px) {
+  main { flex-direction: column; align-items: center; }
+  .panel { width: 90%; max-width: 320px; }
+  .led-board { grid-template-columns: repeat(6, 1fr); }
+  h1 { font-size: 2rem; letter-spacing: 4px; }
+}
