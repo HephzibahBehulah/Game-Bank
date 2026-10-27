@@ -1,8 +1,8 @@
 # Hephzibah Behulah Game Bank
 
-A growing library of individual browser games. GitHub Pages publishes the catalog and each game's page.
+A growing library of individual browser games. GitHub Pages publishes the catalog and every released game page.
 
-## Currently playable games
+## Current playable titles
 
 1. NEON PULSE — RGB LED light design
 2. CIRCUIT RUSH — wire-path puzzle
@@ -14,36 +14,35 @@ A growing library of individual browser games. GitHub Pages publishes the catalo
 8. FUSE BOX — electrical logic puzzle
 9. GOAL LINE — football penalty shootout
 10. APEX CIRCUIT — arcade traffic-dodging race
-11. WORLD FOOTBALL — keyboard/touch 2D football match and season ladder
+11. WORLD FOOTBALL — interactive 2D club/international match
+12. CORTEX PRIME — sequences, matrices, hidden-rule reasoning
+13. SYNAPSE SPRINT — working-memory sequence challenge
+14. BILLIONAIRE CHALLENGE — 15-question quiz ladder with lifelines
 
-## Football game data
+## Progression
 
-WORLD FOOTBALL includes selectable LaLiga EA Sports 2026/27 clubs, UEFA Champions League 2026/27 league-phase clubs, UEFA Nations League 2026/27 League A nations, and the 48 FIFA World Cup 2026 qualified teams. These names and competition groups are based on official competition pages and can change with eligibility and licensing. The game is an independent educational arcade simulation, not an official licensed product; it does not include licensed club badges, official player rosters, live fixtures, or real-world results.
+Current titles have per-game 10,000-stage progression saved in the browser. The requested **100,000 individual titles are not complete**; a stage counter does not count as a separate game. Titles are added as individually designed and tested games, not template relabels.
 
-## Controls and progress
+## Football scope and rights
 
-WORLD FOOTBALL: move the highlighted player with WASD or arrows, pass with P, shoot with Space. Click a teammate or press 1–9 to change player. Win the 90-second match to clear the current stage. Use the touch arrow controls on mobile.
+WORLD FOOTBALL currently provides a 2D arcade match and official team-name selections for LaLiga 2026/27, the UEFA Champions League 2026/27 league phase, UEFA Nations League 2026/27 League A, and FIFA World Cup 2026. It does **not** yet contain verified real-player rosters or licensed player likenesses; the requested Ronaldo/Messi/Okocha/Pogba/Osimhen and Chelsea/Bayern/Manchester United player matches remain in progress. The screenshots supplied were search-result pages containing stock-photo previews and watermarks, not licensed image files, so they are not embedded in the game. Player photos, club crests, kits, and console/store release need appropriate rights and platform approvals. The project is not an official licensed football game.
 
-GOAL LINE: select one of nine target zones and score at least three of five penalties.
-APEX CIRCUIT: steer with arrows/A-D or touch controls and avoid traffic through the finish.
+## IQ and quiz games
 
-Each current game uses a 10,000-stage progression counter. This is not 10,000 distinct game titles. Progress is stored locally in the browser and is not synced between devices or users.
+CORTEX PRIME generates deterministic sequence, matrix and rule-decoding challenges. SYNAPSE SPRINT tests digit recall with growing length and shorter display intervals. BILLIONAIRE CHALLENGE provides original calculations, logic and curated fact questions, three per-run lifelines, safety-net prize tiers and local best-score storage. It is an independent quiz game and is not affiliated with a television quiz brand.
 
-## Desktop launchers
+## AI competition — active requirement, not released yet
 
-Run `install-launchers.ps1` on Windows to create one named Internet Shortcut per current game in `Desktop/Game Bank Launchers`. The script now lists all 11 released games.
+The planned AI arena must send one text or speech-transcribed prompt concurrently to ChatGPT, Gemini, Grok, DeepSeek, Claude and Ollama, show each provider's real response, and let the user judge and score answers. It is **not yet connected**. Do not fabricate provider output or put provider keys in browser JavaScript. A secured server gateway and protected provider credentials are required before this game can be called functional.
 
-## Run and publish
+## Controls and launchers
 
-The project uses plain HTML/CSS/JavaScript. Open `index.html` for the catalog. GitHub Pages publishes the `main` branch from the repository root; a push to `main` triggers the build and deployment. Inspect the successful Actions deployment and verify the cache-busted public page after each release.
+WORLD FOOTBALL uses WASD/arrows, P to pass, Space to shoot, on-screen touch arrows and mouse selection. GOAL LINE is a penalty shootout; APEX CIRCUIT is an arcade racer. Run `install-launchers.ps1` on Windows to create named shortcuts for all released games in `Desktop/Game Bank Launchers`.
 
-## Not yet delivered
+## Build and publish
 
-The library currently has **11 titles**, not 100,000. New titles must be individually designed and tested; multiplying seeds or relabeling templates does not create distinct games. The requested real-time AI competition is not connected to ChatGPT, Gemini, Grok, DeepSeek, Claude, or Ollama yet. Secure provider APIs require a private gateway and provider credentials; never place API keys in browser code. User accounts, shared cloud progress, an admin dashboard, native mobile/store builds, and native PS5/PS6 titles are not implemented. Console release needs platform-holder access and approval.
+The project is plain HTML/CSS/JavaScript. Open `index.html` for the catalog. GitHub Pages publishes `main` from the repository root. Verify the Actions build/deploy and cache-busted public pages after each main-branch update.
 
-## Competition sources
+## Console and account roadmap
 
-- [LALIGA clubs 2026/27](https://www.laliga.com/en-US/laliga-easports/clubs)
-- [UEFA Champions League teams 2026/27](https://www.uefa.com/uefachampionsleague/news/02a8-2171a88881a0-c70193b972c6-1000--meet-the-2026-27-champions-league-league-phase-teams/)
-- [UEFA Nations League 2026/27](https://www.uefa.com/uefanationsleague/news/0298-1d6ef1acfaef-b54fcf1da859-1000--2026-27-uefa-nations-league-all-you-need-to-know/)
-- [FIFA World Cup 2026 qualified teams](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/world-cup-2026-who-has-qualified)
+User accounts, cloud-synced progress, admin controls, multiplayer, secure AI provider deployment, native iOS/Android/Windows packages and PS5/PS6-native games have not been delivered. Native console releases require platform-holder developer access, approved tooling, licensing and certification; a browser game is not a native PlayStation title.
